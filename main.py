@@ -396,12 +396,6 @@ async def start_handler(_, message):
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
-
-    await message.reply_animation(
-        animation="https://t.me/bye_Artist/5",
-        caption=caption,
-        parse_mode=ParseMode.MARKDOWN,
-        reply_markup=reply_markup
     )
 
     # Register chat ID for broadcasting silently
